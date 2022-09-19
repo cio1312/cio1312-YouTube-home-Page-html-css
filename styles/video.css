@@ -1,0 +1,121 @@
+
+/* we comented this as now we are using grid system and it takes care of everything */
+.video-preview {
+    /* width: 300px; */
+
+    /* display: inline-block;
+    vertical-align: top;
+    margin-right: 15px; */
+
+
+}
+
+.thumbnail {
+    /* width: 300px;  if we put this then when scree siz changes its doznt auto align itslef */
+    width: 100%;
+
+    /* display: block; */
+}
+
+
+.video-grid {
+    display: grid;
+    /* we have decided for three videos in one line so there should be three div , for each video respectively. if more div then the are shifted down in line with up three */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* space between row and column for each grid box */
+    column-gap: 16px;
+    row-gap: 40px;
+    background-color: rgb(241, 233, 233);
+
+}
+/* 
+for responseive we page */
+@media (max-width: 750px)
+{
+    /* if screen sze dec then just show two columns */
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* 4 columns fora large screen */
+
+    @media (min-width:1000px) {
+        .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+}
+/* applying grid system to channel photo and video text. that is we will make 2 columns */
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+
+}
+
+
+.video-title {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+/* to avoid dublication */
+.video-stats,
+.video-author {
+    /* display: block; */
+    /* in html there are two types of elements */
+    /* block and inline-block */
+    /* block takes the entire row space even if small is required */
+    /* inline-block takes space how much is needed for it */
+    /* by default mostly its inline. */
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+
+.video-author {
+    margin-bottom: 4px;
+
+}
+
+.videoInfo {
+    /* display: inline-block;
+    width: 200px; */
+}
+
+.channel-picture {
+    /* display: inline-block;
+    width: 50px;
+    vertical-align: top; */
+    /* commented since now we are using grid system */
+}
+
+.profile-picture {
+    width: 36px;
+    /*it takes entire space in its container */
+    border-radius: 50px;
+}
+
+.thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.video-time{
+    font-family: Roboto,Arial;
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 4px;
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 4px;
+
+}

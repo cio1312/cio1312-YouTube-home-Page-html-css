@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>positionpractice</title>
+    </head>
+    <body style="
+    height: 3000px;
+    padding-top: 60px;
+    padding-left: 100px;">
+
+        <div style="background-color: black;
+         color: white; 
+         position: fixed;
+        top: 0;
+        left: 0;
+       height: 50px;
+        right: 0;
+        z-index: 1px;
+        /* tells which elements appear behind and which are front */
+        /* elements with higher z index will appear in front of elements with lowe z index */
+       
+        ">
+        
+header
+        </div>
+
+        <div style="background-color: green;
+        color:white;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        top:0;
+        width: 72px;">
+            position side bar
+        </div>
+
+
+        <div style="background-color: rgb(238, 16, 53);
+        color:rgb(102, 11, 11);
+        position: fixed;
+        left: 10px;
+        top:10px;
+        /* the element moves along with the page movement */
+        position: absolute;
+        width: 72px;
+        z-index: 2px;">
+           absolute
+        </div>
+
+
+<div style="background-color: lightgreen; width: 200px; height: 200px; position: static;">div1</div>
+<div style="background-color: lightsalmon; width:200px; height: 200px;">div2</div>
+    </body>
+</html> 

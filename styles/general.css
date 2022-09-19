@@ -1,0 +1,16 @@
+p {
+    /* ariel is backup font */
+    font-family: Roboto, Arial;
+    margin-top: 0;
+    /* get rid of all default margins */
+    margin-bottom: 0;
+}
+
+
+body{
+    /* set all margin in all direction to zero */
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 96px;
+    padding-right: 24px;
+}

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<!-- Objective: you tube page with 3 videos in a row and 2 rows  -->
+
+<head>
+    <title>Youtube clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+  
+<link rel="stylesheet" href="styles/header.css">
+<link rel="stylesheet" href="styles/video.css">
+<link rel="stylesheet" href="styles/general.css">
+<link rel="stylesheet" href="styles/sidebar.css">
+
+</head>
+
+<body>
+
+<div class="headersection">
+    <div class="left-header-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="icons/youtube-logo.svg">
+    </div>
+    <div class="center-header-section">
+        <input type="text" placeholder="Search" class="search-bar">
+        <Button class="search-button">
+            <img class="search-icon" class="hamburger-menu" src="icons/search.svg">
+            <div class="tooltip">Search</div>
+        </Button>
+       
+        <button class="voice-search-button">
+            <img class="voice-search-icon" class="youtube-logo" src="icons/voice-search-icon.svg">
+            <div class="tooltip">Search with voice</div>
+        </button>
+       
+    </div>
+    <div class="right-header-section">
+        <div class="upload-icon-container">
+
+            <img class="upload-icon" class="hamburger-menu" src="icons/upload.svg">
+            <div class="tooltip">Create</div>
+        </div>
+
+      
+       <div class="youtube-apps-container">
+
+        <img class="youtube-app-icon" class="youtube-logo" src="icons/youtube-apps.svg">
+        <div class="tooltip">Apps</div>
+       </div>
+
+ 
+     
+   
+           
+            <div class="notification-icon-container"> 
+                <img class="notifications-icon" class="hamburger-menu" src="icons/notifications.svg">
+                <div class="notificationcount">3</div>
+            </div>
+      
+
+            <img class="myphoto-icon" class="youtube-logo" src="icons/myphoto.jpg">
+    
+    </div>
+    
+</div>
+
+<!-- sidebar -->
+<div class="sidebar">
+<div class="sidebar-link">
+    <img src="icons/home.svg" alt="home">
+    <div>Home</div>
+</div>
+<div class="sidebar-link">
+    <img src="icons/explore.svg" alt="explore">
+    <div>Explore</div>
+</div>
+<div class="sidebar-link">
+    <img src="icons/subscriptions.svg" alt="subscriptions">
+    <div>subscriptions</div>
+</div>
+<div class="sidebar-link">
+    <img src="icons/originals.svg" alt="originals">
+    <div>Originals</div>
+</div>
+<div class="sidebar-link">
+    <img src="icons/youtube-music.svg" alt="youtube">
+    <div>YouTube Music</div>
+</div>
+<div class="sidebar-link">
+    <img src="icons/library.svg" alt="library">
+    <div>Library</div>
+</div>
+</div>
+   
+
+    <!-- div is like a box and whatever property we put to div is applied to everything inside div -->
+    <!-- below container has more containers. So look at image and product and accordingly decide container -->
+
+    <div class="video-grid">
+
+        <div class="video-preview">
+            <!-- one container for thumb image -->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/ImageOne.webp">
+                <div class="video-time">6:20</div>
+            </div>
+
+            <!-- container for video info part + profile photo -->
+            <div class="video-info-grid">
+                <!-- below this are two <div> that is 2 columns in a grid system. col1 = photo , col2= text-->
+                <div class="channel-picture">
+                    <!--container for profile photo -->
+                    <img class="profile-picture" src="profile/profilOne.jpg">
+                </div>
+
+                <!-- container for video info -->
+                <div class="videoInfo">
+                    <p class="video-title">🔥Lets build IDM using Java 📥 | Java Project in Hindi</p>
+                    <p class="video-author">Learn Code With Durgesh</p>
+                    <p class="video-stats">3.4M views &#183; 22 hours ago</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="video-preview">
+            <!-- one container for thumb image -->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/ImageTwo.webp">
+                <div class="video-time">10:20</div>
+            </div>
+
+            <!-- container for  profile photo + video info part -->
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <!--container for profile photo -->
+                    <img class="profile-picture" src="profile/profileTwo.jpg">
+                </div>
+
+                <!-- container for video info -->
+                <div class="videoInfo">
+                    <p class="video-title">Arch Angel Micheal and Satan Dispute Over The Body Of Moses</p>
+                    <p class="video-author">Grace Digital Network</p>
+                    <p class="video-stats">1.7K views &#183; 1 hour ago</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="video-preview">
+            <!-- one container for thumb image -->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/imagethree.webp">
+                <div class="video-time">20:10</div>
+            </div>
+
+            <!-- container for video info part + profile photo -->
+            <div class="video-info-grid">
+                <!-- below this are two <div> that is 2 columns in a grid system. col1 = photo , col2= text-->
+                <div class="channel-picture">
+                    <!--container for profile photo -->
+                    <img class="profile-picture" src="profile/profilethree.jpg">
+                </div>
+
+                <!-- container for video info -->
+                <div class="videoInfo">
+                    <p class="video-title">React JS - React Tutorial for Beginners</p>
+                    <p class="video-author">Programming with Mosh</p>
+                    <p class="video-stats">5.2M views &#183; 5.2M views</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="video-preview">
+            <!-- one container for thumb image -->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/imagefour.webp">
+                <div class="video-time">20:00</div>
+            </div>
+
+            <!-- container for  profile photo + video info part -->
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <!--container for profile photo -->
+                    <img class="profile-picture" src="profile/imagefour.jpg">
+                </div>
+
+                <!-- container for video info -->
+                <div class="videoInfo">
+                    <p class="video-title">#6 Set Up a SIGNUP Form With Spring Security | Save Your New Users to Spring
+                        Security USER'S Schema by Selenium Express 1 year ago 1 hour, 5 minutes 5,352 views</p>
+                    <p class="video-author">Selenium Express</p>
+                    <p class="video-stats">5.3K views &#183; 1 hour ago</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="video-preview">
+            <!-- one container for thumb image -->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/imagefive.jpg">
+                <div class="video-time">15:20</div>
+            </div>
+
+            <!-- container for video info part + profile photo -->
+            <div class="video-info-grid">
+                <!-- below this are two <div> that is 2 columns in a grid system. col1 = photo , col2= text-->
+                <div class="channel-picture">
+                    <!--container for profile photo -->
+                    <img class="profile-picture" src="profile/profilefive.jpg">
+                </div>
+
+                <!-- container for video info -->
+                <div class="videoInfo">
+                    <p class="video-title">Peaceful Christian Playlist</p>
+                    <p class="video-author">remain in the vine</p>
+                    <p class="video-stats">168k views &#183; 6 months ago</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="video-preview">
+            <!-- one container for thumb image -->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/imagesix.webp">
+                <div class="video-time">10:10</div>
+            </div>
+
+            <!-- container for  profile photo + video info part -->
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <!--container for profile photo -->
+                    <img class="profile-picture" src="profile/profilesix.jpg">
+                </div>
+
+                <!-- container for video info -->
+                <div class="videoInfo">
+                    <p class="video-title">🙏Non Stop Morning Worship Song 2021🙏10 Hours Non Stop Worship Songs🙏Best
+                        Worship Songs of All Time by Best Worship Songs Streamed 1 year ago 11 hours, 55 minutes 18,670
+                        views</p>
+                    <p class="video-author">Best Worship Songs</p>
+                    <p class="video-stats">180K views &#183; Streamed 1 year ago</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="video-preview">
+            <!-- one container for thumb image -->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/imageseven.jpg">
+                <div class="video-time">2:30</div>
+            </div>
+
+            <!-- container for  profile photo + video info part -->
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <!--container for profile photo -->
+                    <img class="profile-picture" src="profile/profileseven.jpg">
+                </div>
+
+                <!-- container for video info -->
+                <div class="videoInfo">
+                    <p class="video-title">Instrumental Worship - The Best Acoustic Worship Songs on Guitar by Josh
+                        Snodgrass 1 day ago 3 hours, 47 minutes 13,808 views</p>
+                    <p class="video-author">Josh Snodgrass</p>
+                    <p class="video-stats">13K views &#183; 1 day ago</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="video-preview">
+            <!-- one container for thumb image -->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/imageeight.jpg">
+                <div class="video-time">10:00</div>
+            </div>
+
+            <!-- container for video info part + profile photo -->
+            <div class="video-info-grid">
+                <!-- below this are two <div> that is 2 columns in a grid system. col1 = photo , col2= text-->
+                <div class="channel-picture">
+                    <!--container for profile photo -->
+                    <img class="profile-picture" src="profile/profile8.jpg">
+                </div>
+
+                <!-- container for video info -->
+                <div class="videoInfo">
+                    <p class="video-title">Spring Boot Registration and Login with MySQL Database, Bootstrap and HTML5
+                    </p>
+                    <p class="video-author">Code Java</p>
+                    <p class="video-stats">3.4M views &#183; 22 hours ago</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="video-preview">
+            <!-- one container for thumb image -->
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnails/imagening.jpg">
+                <div class="video-time">5:20</div>
+            </div>
+
+            <!-- container for  profile photo + video info part -->
+            <div class="video-info-grid">
+                <div class="channel-picture">
+                    <!--container for profile photo -->
+                    <img class="profile-picture" src="profile/profilenine.jpg">
+                </div>
+
+                <!-- container for video info -->
+                <div class="videoInfo">
+                    <p class="video-title">Slow Dance Cover</p>
+                    <p class="video-author">Music Art</p>
+                    <p class="video-stats">1.7K views &#183; 10 months ago</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
